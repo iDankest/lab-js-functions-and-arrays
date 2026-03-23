@@ -49,5 +49,5 @@ const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", 
 
 function doesWordExist(words, word) {
     if (words.length === 0) return null
-    return words.includes(word) != true ? false : true
+    return words.includes(word) != true ? false : true // Includes ya devuelve un valor Booleano no hace falta el ternario
 }
