@@ -1,8 +1,7 @@
 // Iteration 1 | Find the Maximum
 function maxOfTwoNumbers(a ,b) {
     if (a >= b) return a
-    else return b
-        
+    else return b //Se puede hacer con ternario y reducir mas 
 }
 
 
@@ -13,8 +12,8 @@ const words = ["mystery", "brother", "aviator", "crocodile", "pearl", "orchard",
 
 function findLongestWord(words) {
     let wordLong = ""
-    if (words == "") return null
-    words.forEach((word) => {
+    if (words == "") return null //Mas adecuado seria words.length === 0 => Null, pero como me lo dio bien lo dejo asi 🙃
+    words.forEach((word) => { //Se podria hacer con Reduce o Sort y se condensa aun mas, para mi se ve mas claro así en esta ocacion
         if (word.length > wordLong.length) wordLong = word
     })
     return wordLong
@@ -27,7 +26,7 @@ function findLongestWord(words) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(num) {
-   return num.reduce((acc, curr) => acc + curr, 0)
+   return num.reduce((acc, curr) => acc + curr, 0) //Manera mas optima con reduce para operaciones viene genial
 }
 
 
